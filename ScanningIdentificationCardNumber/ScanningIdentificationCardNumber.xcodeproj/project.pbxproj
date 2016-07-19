@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4240803D1D3DFEC50052FE64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4240803C1D3DFEC50052FE64 /* main.m */; };
+		424080401D3DFEC50052FE64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4240803F1D3DFEC50052FE64 /* AppDelegate.m */; };
+		424080431D3DFEC50052FE64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 424080421D3DFEC50052FE64 /* ViewController.m */; };
+		424080461D3DFEC50052FE64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 424080441D3DFEC50052FE64 /* Main.storyboard */; };
+		424080481D3DFEC50052FE64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 424080471D3DFEC50052FE64 /* Assets.xcassets */; };
+		4240804B1D3DFEC50052FE64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 424080491D3DFEC50052FE64 /* LaunchScreen.storyboard */; };
+		424080561D3DFEC50052FE64 /* ScanningIdentificationCardNumberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 424080551D3DFEC50052FE64 /* ScanningIdentificationCardNumberTests.m */; };
+		424080611D3DFEC60052FE64 /* ScanningIdentificationCardNumberUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 424080601D3DFEC60052FE64 /* ScanningIdentificationCardNumberUITests.m */; };
+		4240807A1D3E03870052FE64 /* libCardIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 424080771D3E03870052FE64 /* libCardIO.a */; };
+		4240807B1D3E03870052FE64 /* libopencv_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 424080781D3E03870052FE64 /* libopencv_core.a */; };
+		4240807C1D3E03870052FE64 /* libopencv_imgproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 424080791D3E03870052FE64 /* libopencv_imgproc.a */; };
+		4240807E1D3E03BE0052FE64 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4240807D1D3E03BE0052FE64 /* Accelerate.framework */; };
+		424080801D3E03CD0052FE64 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4240807F1D3E03CD0052FE64 /* MobileCoreServices.framework */; };
+		424080821D3E03DC0052FE64 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424080811D3E03DC0052FE64 /* CoreMedia.framework */; };
+		424080841D3E03E80052FE64 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424080831D3E03E80052FE64 /* AudioToolbox.framework */; };
+		424080861D3E03F70052FE64 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424080851D3E03F70052FE64 /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		424080521D3DFEC50052FE64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 424080301D3DFEC50052FE64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 424080371D3DFEC50052FE64;
+			remoteInfo = ScanningIdentificationCardNumber;
+		};
+		4240805D1D3DFEC60052FE64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 424080301D3DFEC50052FE64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 424080371D3DFEC50052FE64;
+			remoteInfo = ScanningIdentificationCardNumber;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		424080381D3DFEC50052FE64 /* ScanningIdentificationCardNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanningIdentificationCardNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4240803C1D3DFEC50052FE64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4240803E1D3DFEC50052FE64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4240803F1D3DFEC50052FE64 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		424080411D3DFEC50052FE64 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		424080421D3DFEC50052FE64 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		424080451D3DFEC50052FE64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		424080471D3DFEC50052FE64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4240804A1D3DFEC50052FE64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4240804C1D3DFEC50052FE64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		424080511D3DFEC50052FE64 /* ScanningIdentificationCardNumberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanningIdentificationCardNumberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		424080551D3DFEC50052FE64 /* ScanningIdentificationCardNumberTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanningIdentificationCardNumberTests.m; sourceTree = "<group>"; };
+		424080571D3DFEC50052FE64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4240805C1D3DFEC60052FE64 /* ScanningIdentificationCardNumberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanningIdentificationCardNumberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		424080601D3DFEC60052FE64 /* ScanningIdentificationCardNumberUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanningIdentificationCardNumberUITests.m; sourceTree = "<group>"; };
+		424080621D3DFEC60052FE64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4240806F1D3E03870052FE64 /* CardIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIO.h; sourceTree = "<group>"; };
+		424080701D3E03870052FE64 /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOCreditCardInfo.h; sourceTree = "<group>"; };
+		424080711D3E03870052FE64 /* CardIODetectionMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIODetectionMode.h; sourceTree = "<group>"; };
+		424080721D3E03870052FE64 /* CardIOPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewController.h; sourceTree = "<group>"; };
+		424080731D3E03870052FE64 /* CardIOPaymentViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewControllerDelegate.h; sourceTree = "<group>"; };
+		424080741D3E03870052FE64 /* CardIOUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOUtilities.h; sourceTree = "<group>"; };
+		424080751D3E03870052FE64 /* CardIOView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOView.h; sourceTree = "<group>"; };
+		424080761D3E03870052FE64 /* CardIOViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOViewDelegate.h; sourceTree = "<group>"; };
+		424080771D3E03870052FE64 /* libCardIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCardIO.a; sourceTree = "<group>"; };
+		424080781D3E03870052FE64 /* libopencv_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopencv_core.a; sourceTree = "<group>"; };
+		424080791D3E03870052FE64 /* libopencv_imgproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopencv_imgproc.a; sourceTree = "<group>"; };
+		4240807D1D3E03BE0052FE64 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		4240807F1D3E03CD0052FE64 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		424080811D3E03DC0052FE64 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		424080831D3E03E80052FE64 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		424080851D3E03F70052FE64 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		424080351D3DFEC50052FE64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				424080861D3E03F70052FE64 /* AVFoundation.framework in Frameworks */,
+				424080841D3E03E80052FE64 /* AudioToolbox.framework in Frameworks */,
+				424080821D3E03DC0052FE64 /* CoreMedia.framework in Frameworks */,
+				424080801D3E03CD0052FE64 /* MobileCoreServices.framework in Frameworks */,
+				4240807E1D3E03BE0052FE64 /* Accelerate.framework in Frameworks */,
+				4240807A1D3E03870052FE64 /* libCardIO.a in Frameworks */,
+				4240807B1D3E03870052FE64 /* libopencv_core.a in Frameworks */,
+				4240807C1D3E03870052FE64 /* libopencv_imgproc.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4240804E1D3DFEC50052FE64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		424080591D3DFEC60052FE64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4240802F1D3DFEC50052FE64 = {
+			isa = PBXGroup;
+			children = (
+				424080851D3E03F70052FE64 /* AVFoundation.framework */,
+				424080831D3E03E80052FE64 /* AudioToolbox.framework */,
+				424080811D3E03DC0052FE64 /* CoreMedia.framework */,
+				4240807F1D3E03CD0052FE64 /* MobileCoreServices.framework */,
+				4240807D1D3E03BE0052FE64 /* Accelerate.framework */,
+				4240803A1D3DFEC50052FE64 /* ScanningIdentificationCardNumber */,
+				424080541D3DFEC50052FE64 /* ScanningIdentificationCardNumberTests */,
+				4240805F1D3DFEC60052FE64 /* ScanningIdentificationCardNumberUITests */,
+				424080391D3DFEC50052FE64 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		424080391D3DFEC50052FE64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				424080381D3DFEC50052FE64 /* ScanningIdentificationCardNumber.app */,
+				424080511D3DFEC50052FE64 /* ScanningIdentificationCardNumberTests.xctest */,
+				4240805C1D3DFEC60052FE64 /* ScanningIdentificationCardNumberUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4240803A1D3DFEC50052FE64 /* ScanningIdentificationCardNumber */ = {
+			isa = PBXGroup;
+			children = (
+				4240806E1D3E03870052FE64 /* CardIO */,
+				4240803E1D3DFEC50052FE64 /* AppDelegate.h */,
+				4240803F1D3DFEC50052FE64 /* AppDelegate.m */,
+				424080411D3DFEC50052FE64 /* ViewController.h */,
+				424080421D3DFEC50052FE64 /* ViewController.m */,
+				424080441D3DFEC50052FE64 /* Main.storyboard */,
+				424080471D3DFEC50052FE64 /* Assets.xcassets */,
+				424080491D3DFEC50052FE64 /* LaunchScreen.storyboard */,
+				4240804C1D3DFEC50052FE64 /* Info.plist */,
+				4240803B1D3DFEC50052FE64 /* Supporting Files */,
+			);
+			path = ScanningIdentificationCardNumber;
+			sourceTree = "<group>";
+		};
+		4240803B1D3DFEC50052FE64 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4240803C1D3DFEC50052FE64 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		424080541D3DFEC50052FE64 /* ScanningIdentificationCardNumberTests */ = {
+			isa = PBXGroup;
+			children = (
+				424080551D3DFEC50052FE64 /* ScanningIdentificationCardNumberTests.m */,
+				424080571D3DFEC50052FE64 /* Info.plist */,
+			);
+			path = ScanningIdentificationCardNumberTests;
+			sourceTree = "<group>";
+		};
+		4240805F1D3DFEC60052FE64 /* ScanningIdentificationCardNumberUITests */ = {
+			isa = PBXGroup;
+			children = (
+				424080601D3DFEC60052FE64 /* ScanningIdentificationCardNumberUITests.m */,
+				424080621D3DFEC60052FE64 /* Info.plist */,
+			);
+			path = ScanningIdentificationCardNumberUITests;
+			sourceTree = "<group>";
+		};
+		4240806E1D3E03870052FE64 /* CardIO */ = {
+			isa = PBXGroup;
+			children = (
+				4240806F1D3E03870052FE64 /* CardIO.h */,
+				424080701D3E03870052FE64 /* CardIOCreditCardInfo.h */,
+				424080711D3E03870052FE64 /* CardIODetectionMode.h */,
+				424080721D3E03870052FE64 /* CardIOPaymentViewController.h */,
+				424080731D3E03870052FE64 /* CardIOPaymentViewControllerDelegate.h */,
+				424080741D3E03870052FE64 /* CardIOUtilities.h */,
+				424080751D3E03870052FE64 /* CardIOView.h */,
+				424080761D3E03870052FE64 /* CardIOViewDelegate.h */,
+				424080771D3E03870052FE64 /* libCardIO.a */,
+				424080781D3E03870052FE64 /* libopencv_core.a */,
+				424080791D3E03870052FE64 /* libopencv_imgproc.a */,
+			);
+			path = CardIO;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		424080371D3DFEC50052FE64 /* ScanningIdentificationCardNumber */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 424080651D3DFEC60052FE64 /* Build configuration list for PBXNativeTarget "ScanningIdentificationCardNumber" */;
+			buildPhases = (
+				424080341D3DFEC50052FE64 /* Sources */,
+				424080351D3DFEC50052FE64 /* Frameworks */,
+				424080361D3DFEC50052FE64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScanningIdentificationCardNumber;
+			productName = ScanningIdentificationCardNumber;
+			productReference = 424080381D3DFEC50052FE64 /* ScanningIdentificationCardNumber.app */;
+			productType = "com.apple.product-type.application";
+		};
+		424080501D3DFEC50052FE64 /* ScanningIdentificationCardNumberTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 424080681D3DFEC60052FE64 /* Build configuration list for PBXNativeTarget "ScanningIdentificationCardNumberTests" */;
+			buildPhases = (
+				4240804D1D3DFEC50052FE64 /* Sources */,
+				4240804E1D3DFEC50052FE64 /* Frameworks */,
+				4240804F1D3DFEC50052FE64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				424080531D3DFEC50052FE64 /* PBXTargetDependency */,
+			);
+			name = ScanningIdentificationCardNumberTests;
+			productName = ScanningIdentificationCardNumberTests;
+			productReference = 424080511D3DFEC50052FE64 /* ScanningIdentificationCardNumberTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4240805B1D3DFEC60052FE64 /* ScanningIdentificationCardNumberUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4240806B1D3DFEC60052FE64 /* Build configuration list for PBXNativeTarget "ScanningIdentificationCardNumberUITests" */;
+			buildPhases = (
+				424080581D3DFEC60052FE64 /* Sources */,
+				424080591D3DFEC60052FE64 /* Frameworks */,
+				4240805A1D3DFEC60052FE64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4240805E1D3DFEC60052FE64 /* PBXTargetDependency */,
+			);
+			name = ScanningIdentificationCardNumberUITests;
+			productName = ScanningIdentificationCardNumberUITests;
+			productReference = 4240805C1D3DFEC60052FE64 /* ScanningIdentificationCardNumberUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		424080301D3DFEC50052FE64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "侯仁杰";
+				TargetAttributes = {
+					424080371D3DFEC50052FE64 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = BH8V9RJ48H;
+					};
+					424080501D3DFEC50052FE64 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = BH8V9RJ48H;
+						TestTargetID = 424080371D3DFEC50052FE64;
+					};
+					4240805B1D3DFEC60052FE64 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = BH8V9RJ48H;
+						TestTargetID = 424080371D3DFEC50052FE64;
+					};
+				};
+			};
+			buildConfigurationList = 424080331D3DFEC50052FE64 /* Build configuration list for PBXProject "ScanningIdentificationCardNumber" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4240802F1D3DFEC50052FE64;
+			productRefGroup = 424080391D3DFEC50052FE64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				424080371D3DFEC50052FE64 /* ScanningIdentificationCardNumber */,
+				424080501D3DFEC50052FE64 /* ScanningIdentificationCardNumberTests */,
+				4240805B1D3DFEC60052FE64 /* ScanningIdentificationCardNumberUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		424080361D3DFEC50052FE64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4240804B1D3DFEC50052FE64 /* LaunchScreen.storyboard in Resources */,
+				424080481D3DFEC50052FE64 /* Assets.xcassets in Resources */,
+				424080461D3DFEC50052FE64 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4240804F1D3DFEC50052FE64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4240805A1D3DFEC60052FE64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		424080341D3DFEC50052FE64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				424080431D3DFEC50052FE64 /* ViewController.m in Sources */,
+				424080401D3DFEC50052FE64 /* AppDelegate.m in Sources */,
+				4240803D1D3DFEC50052FE64 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4240804D1D3DFEC50052FE64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				424080561D3DFEC50052FE64 /* ScanningIdentificationCardNumberTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		424080581D3DFEC60052FE64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				424080611D3DFEC60052FE64 /* ScanningIdentificationCardNumberUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		424080531D3DFEC50052FE64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 424080371D3DFEC50052FE64 /* ScanningIdentificationCardNumber */;
+			targetProxy = 424080521D3DFEC50052FE64 /* PBXContainerItemProxy */;
+		};
+		4240805E1D3DFEC60052FE64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 424080371D3DFEC50052FE64 /* ScanningIdentificationCardNumber */;
+			targetProxy = 4240805D1D3DFEC60052FE64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		424080441D3DFEC50052FE64 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				424080451D3DFEC50052FE64 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		424080491D3DFEC50052FE64 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4240804A1D3DFEC50052FE64 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		424080631D3DFEC60052FE64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		424080641D3DFEC60052FE64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		424080661D3DFEC60052FE64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = ScanningIdentificationCardNumber/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ScanningIdentificationCardNumber/CardIO",
+				);
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Hou-Renjie.ScanningIdentificationCardNumber";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		424080671D3DFEC60052FE64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = ScanningIdentificationCardNumber/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ScanningIdentificationCardNumber/CardIO",
+				);
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Hou-Renjie.ScanningIdentificationCardNumber";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		424080691D3DFEC60052FE64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ScanningIdentificationCardNumberTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hou-Renjie.ScanningIdentificationCardNumberTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScanningIdentificationCardNumber.app/ScanningIdentificationCardNumber";
+			};
+			name = Debug;
+		};
+		4240806A1D3DFEC60052FE64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ScanningIdentificationCardNumberTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hou-Renjie.ScanningIdentificationCardNumberTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScanningIdentificationCardNumber.app/ScanningIdentificationCardNumber";
+			};
+			name = Release;
+		};
+		4240806C1D3DFEC60052FE64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ScanningIdentificationCardNumberUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hou-Renjie.ScanningIdentificationCardNumberUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ScanningIdentificationCardNumber;
+			};
+			name = Debug;
+		};
+		4240806D1D3DFEC60052FE64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ScanningIdentificationCardNumberUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hou-Renjie.ScanningIdentificationCardNumberUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ScanningIdentificationCardNumber;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		424080331D3DFEC50052FE64 /* Build configuration list for PBXProject "ScanningIdentificationCardNumber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				424080631D3DFEC60052FE64 /* Debug */,
+				424080641D3DFEC60052FE64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		424080651D3DFEC60052FE64 /* Build configuration list for PBXNativeTarget "ScanningIdentificationCardNumber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				424080661D3DFEC60052FE64 /* Debug */,
+				424080671D3DFEC60052FE64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		424080681D3DFEC60052FE64 /* Build configuration list for PBXNativeTarget "ScanningIdentificationCardNumberTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				424080691D3DFEC60052FE64 /* Debug */,
+				4240806A1D3DFEC60052FE64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4240806B1D3DFEC60052FE64 /* Build configuration list for PBXNativeTarget "ScanningIdentificationCardNumberUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4240806C1D3DFEC60052FE64 /* Debug */,
+				4240806D1D3DFEC60052FE64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 424080301D3DFEC50052FE64 /* Project object */;
+}
