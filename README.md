@@ -1,0 +1,2 @@
+# ScanningIdentificationCardNumber
+扫描银行卡识别卡号
